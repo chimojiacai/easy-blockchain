@@ -5,12 +5,11 @@ package main
 import (
 	"fmt"
 	"strconv"
-	"testing"
 	"time"
 )
     
 func main() {
-    blockchain := BlockChain{}
+    	blockchain := BlockChain{}
 	for i := 0; i < 5; i++ {
 		b := blockchain.uploadChain("上链数据:" + strconv.Itoa(i))
 		if !b {
